@@ -32,7 +32,7 @@ public class FundamentosApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		componentDependency.saludar();
 		myBean.print();
-		myBeanWithDependency.printWhithDependency();
+		System.out.println(myBeanWithDependency.printWhithDependency());
 	}
 
 	public static void main(String[] args) {

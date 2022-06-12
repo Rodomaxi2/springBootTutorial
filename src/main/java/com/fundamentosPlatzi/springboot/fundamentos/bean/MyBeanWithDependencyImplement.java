@@ -8,10 +8,9 @@ public class MyBeanWithDependencyImplement implements MyBeanWithDependency{
     }
 
     @Override
-    public void printWhithDependency() {
+    public String printWhithDependency() {
         int numero = 9;
         System.out.println("Hola desde la implementacion de un bean con dependencia");
-        System.out.print("La dependencia inyectada le sumara 1 a " + numero + ": ");
-        System.out.println(myOperation.sum(numero));
+        return("La dependencia inyectada le sumara 1 a " + numero + ": " + myOperation.sum(numero));
     }
 }
